@@ -18,8 +18,6 @@ def create_product_quantity_chart(df, output_folder, filename="product_quantity.
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
 
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
     full_path = os.path.join(output_folder, filename)
     plt.savefig(full_path)
     plt.close()
@@ -41,8 +39,6 @@ def create_price_distribution_chart(df, output_folder, filename="price_distribut
     plt.ylabel('Frequency')
     plt.tight_layout()
 
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
     full_path = os.path.join(output_folder, filename)
     plt.savefig(full_path)
     plt.close()
