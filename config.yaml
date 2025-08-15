@@ -1,0 +1,26 @@
+# Configuration for the AI-Powered Workflow Automation Tool
+
+# --- File Paths ---
+default_input_path: 'data/raw_data.xlsx'
+default_output_path: 'data/processed/processed_data.xlsx'
+
+# --- Data Validation Settings ---
+data_validation_settings:
+  required_columns:
+    - 'id'
+    - 'product_name'
+    - 'quantity'
+    - 'price'
+    - 'category'
+    - 'region'
+    - 'date'
+
+# --- Anomaly Detection Settings ---
+anomaly_detection_settings:
+  columns_for_anomaly_detection:
+    - 'quantity'
+    - 'price'
+
+# --- Data Cleaning Settings ---
+data_cleaning_settings:
+  fill_missing_value_with: 0

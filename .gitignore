@@ -1,0 +1,12 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# OS-specific
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+*.spec
